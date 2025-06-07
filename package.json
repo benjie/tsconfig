@@ -1,0 +1,24 @@
+{
+  "name": "@benjie/tsconfig",
+  "version": "22.0.0",
+  "description": "Benjie's preferred tsconfig options to avoid having to write them everywhere",
+  "author": "Benjie Gillam <code@benjiegillam.com>",
+  "keywords": [
+    "tsconfig",
+    "benjie",
+    "strip-types",
+    "node",
+    "no-linting"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benjie/tsconfig.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  },
+  "files": [
+    "quick.json"
+  ]
+}
