@@ -3,22 +3,7 @@
 This is a bunch of TSConfig options I've grouped together to stop me having to
 create massive TSConfig files all over the place.
 
-## No semver
-
-**This package does not follow semver.** The major version number follows the
-Node.js version that it targets (ref: `@tsconfig/node22` for example), but
-actual updates follow Benjie's ever-changing preferences. Since TypeScript is a
-development-only concern this should only ever cause build-time failures (even
-with production type stripping, all types are simply ignored).
-
-## Contributing
-
-**These are my personal preferences** and although input is welcome, do not
-expect your PR to be merged if I don't think it will benefit my projects or is
-simply not to my taste.
-
-If you notice that I've added a flag which is implied by another flag, please do
-send a PR to remove it. I do not want redundancy in these configs.
+**THIS MODULE DOES NOT FOLLOW SEMVER** (see below).
 
 ## Usage
 
@@ -31,10 +16,17 @@ yarn add --dev @benjie/tsconfig
 
 Add to your `tsconfig.json` depending on your needs:
 
-### Quick
+### @benjie/tsconfig/quick.json
 
-My generally preferred options for just bringing up a **modern** project
-quickly, typically used when hacking out a proof of concept or a test case.
+Add it to your tsconfig.json:
+
+```json
+"extends": "@benjie/tsconfig/quick.json"
+```
+
+These are my generally preferred options for just bringing up a **modern**
+project quickly, typically used when hacking out a proof of concept or a test
+case.
 
 **IMPORTANT**: ensure your `package.json` contains `"type": "module"`, or
 otherwise write your files as `.mts` extension files.
@@ -46,12 +38,6 @@ Outline:
 - Disables "lint-y" checks, deferring these to ESLint
 - Enables and forces type checking of JavaScript
 - My general preferences
-
-Add it to your tsconfig.json:
-
-```json
-"extends": "@benjie/tsconfig/quick.json"
-```
 
 <details>
   <summary>The full configuration</summary>
@@ -107,3 +93,20 @@ Add it to your tsconfig.json:
 The options I commonly use for authoring libraries
 
 **TODO**
+
+## No semver
+
+**This package does not follow semver.** The major version number follows the
+Node.js version that it targets (ref: `@tsconfig/node22` for example), but
+actual updates follow Benjie's ever-changing preferences. Since TypeScript is a
+development-only concern this should only ever cause build-time failures (even
+with production type stripping, all types are simply ignored).
+
+## Contributing
+
+**These are my personal preferences** and although input is welcome, do not
+expect your PR to be merged if I don't think it will benefit my projects or is
+simply not to my taste.
+
+If you notice that I've added a flag which is implied by another flag, please do
+send a PR to remove it. I do not want redundancy in these configs.
