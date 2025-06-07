@@ -36,6 +36,10 @@
     "composite": true,
     "pretty": true,
     "sourceMap": true,
-    "importHelpers": true
+    "importHelpers": true,
+
+    // Generally good stuff for hacking out a project quickly
+    "allowJs": true,
+    "checkJs": true
   }
 }

@@ -33,8 +33,13 @@ Add to your `tsconfig.json` depending on your needs:
 
 ### Quick
 
-My generally preferred options for just bringing up a project quickly, typically
-used when hacking out a proof of concept or a test case.
+My generally preferred options for just bringing up a **modern** project
+quickly, typically used when hacking out a proof of concept or a test case.
+
+**IMPORTANT**: ensure your `package.json` contains `"type": "module"`, or
+otherwise write your files as `.mts` extension files.
+
+Outline:
 
 - Everything in `@tsconfig/node22`
 - Support for `node --experimental-strip-types` as per [the Node.js docs](https://nodejs.org/docs/latest/api/typescript.html#type-stripping)
@@ -48,7 +53,8 @@ Add it to your tsconfig.json:
 "extends": "@benjie/tsconfig/quick.json"
 ```
 
-The config:
+<details>
+  <summary>The full configuration</summary>
 
 ```jsonc
 {
@@ -93,6 +99,8 @@ The config:
   },
 }
 ```
+
+</details>
 
 ### Library
 
