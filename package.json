@@ -1,6 +1,6 @@
 {
   "name": "@benjie/tsconfig",
-  "version": "22.0.1",
+  "version": "22.0.2",
   "description": "Benjie's preferred tsconfig options to avoid having to write them everywhere",
   "author": "Benjie Gillam <code@benjiegillam.com>",
   "keywords": [
