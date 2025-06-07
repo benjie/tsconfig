@@ -81,7 +81,6 @@ Outline:
     "noUnusedLocals": false,
 
     // Generally good stuff for authoring modules
-    "composite": true,
     "pretty": true,
     "sourceMap": true,
     "importHelpers": true,
