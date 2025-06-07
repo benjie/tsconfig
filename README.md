@@ -62,6 +62,9 @@ Outline:
     "erasableSyntaxOnly": true,
     "verbatimModuleSyntax": true,
 
+    // Related:
+    "allowImportingTsExtensions": true,
+
     // From Benjie's preferences
 
     // I generally keep `tsc` running in parallel with other processes and
@@ -82,6 +85,10 @@ Outline:
     "pretty": true,
     "sourceMap": true,
     "importHelpers": true,
+
+    // Generally good stuff for hacking out a project quickly
+    "allowJs": true,
+    "checkJs": true,
   },
 }
 ```

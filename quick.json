@@ -17,6 +17,9 @@
     "erasableSyntaxOnly": true,
     "verbatimModuleSyntax": true,
 
+    // Related:
+    "allowImportingTsExtensions": true,
+
     // From Benjie's preferences
 
     // I generally keep `tsc` running in parallel with other processes and
